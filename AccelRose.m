@@ -11,7 +11,7 @@
 
 @interface AccelRose ()
 @property (nonatomic) NSMutableArray *stream;
-@property (nonatomic) BOOL didJump;
+@property (nonatomic) BOOL isFreeFalling;
 @end
 
 #define STREAM_CAPACITY 1000
@@ -37,15 +37,23 @@
 
 - (void)analyze:(MBLAccelerometerData*)acceleration {
     int threshold = 150;
-    if (!self.didJump && self.prev.RMS < threshold && acceleration.RMS < threshold) {
-        [TCPSfx play:@"jump"];
-        self.didJump = YES;
-    } else if (self.didJump && self.prev.RMS < threshold && acceleration.RMS > threshold) {
-        [TCPSfx play:@"land"];
-        self.didJump = NO;
-    } if (self.prev.RMS > 500 && acceleration.RMS > 750) {
-        self.didJump = NO;
+    if (!self.isFreeFalling && self.prev.RMS < threshold && acceleration.RMS < threshold) {
+        [self startedFreeFall];
+    } else if (self.isFreeFalling && self.prev.RMS < threshold && acceleration.RMS > threshold) {
+        [self endedFreeFall];
     }
+}
+
+#pragma mark - Actions
+
+- (void)startedFreeFall {
+    [TCPSfx play:@"jump"];
+    self.isFreeFalling = YES;
+}
+
+- (void)endedFreeFall {
+    [TCPSfx play:@"land"];
+    self.isFreeFalling = NO;
 }
 
 #pragma mark - Helpers
