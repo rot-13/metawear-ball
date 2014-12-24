@@ -21,7 +21,6 @@
 @property (weak, nonatomic) IBOutlet UISwitch *autoSleepSwitch;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *sleepSampleFrequency;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *sleepPowerScheme;
-@property (nonatomic) int lastRMS;
 
 @property (weak, nonatomic) IBOutlet APLGraphView *accelerometerGraph;
 @property (weak, nonatomic) IBOutlet UILabel *batteryLevelLabel;
@@ -29,63 +28,47 @@
 @property (weak, nonatomic) IBOutlet UIButton *startAccelerometer;
 @property (weak, nonatomic) IBOutlet UIButton *stopAccelerometer;
 
-@property (strong, nonatomic) UIView *grayScreen;
 @property (strong, nonatomic) NSArray *accelerometerDataArray;
 @property (nonatomic) BOOL accelerometerRunning;
-@property (nonatomic) BOOL switchRunning;
+@property (nonatomic) int lastRMS;
 @property (nonatomic) BOOL didJump;
 @end
 
 @implementation DeviceDetailViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.grayScreen = [[UIView alloc] initWithFrame:CGRectMake(0, 120, self.view.frame.size.width, self.view.frame.size.height - 120)];
-    self.grayScreen.backgroundColor = [UIColor grayColor];
-    self.grayScreen.alpha = 0.4;
-    [self.view addSubview:self.grayScreen];
-    
     [self.stopAccelerometer setEnabled:NO];
     self.lastRMS = 1000000;
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
+- (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
     [self.device addObserver:self forKeyPath:@"state" options:NSKeyValueObservingOptionNew context:nil];
     [self connectDevice:YES];
 }
 
-- (void)viewWillDisappear:(BOOL)animated
-{
+- (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     
     [self.device removeObserver:self forKeyPath:@"state"];
 
-    if (self.accelerometerRunning) {
-        [self stopAccelerationPressed:nil];
-    }
+    if (self.accelerometerRunning) [self stopAccelerationPressed:nil];
 }
 
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
-{
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
     if (self.device.state == CBPeripheralStateDisconnected) {
         [self setConnected:NO];
         [self.scrollView scrollRectToVisible:CGRectMake(0, 0, 10, 10) animated:YES];
     }
 }
 
-- (void)setConnected:(BOOL)on
-{
+- (void)setConnected:(BOOL)on {
     [self.connectionSwitch setOn:on animated:YES];
-    [self.grayScreen setHidden:on];
 }
 
-- (void)connectDevice:(BOOL)on
-{
+- (void)connectDevice:(BOOL)on {
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     if (on) {
         hud.labelText = @"Connecting...";
@@ -116,20 +99,17 @@
     }
 }
 
-- (IBAction)connectionSwitchPressed:(id)sender
-{
+- (IBAction)connectionSwitchPressed:(id)sender {
     [self connectDevice:self.connectionSwitch.on];
 }
 
-- (IBAction)readBatteryPressed:(id)sender
-{
+- (IBAction)readBatteryPressed:(id)sender {
     [self.device readBatteryLifeWithHandler:^(NSNumber *number, NSError *error) {
         self.batteryLevelLabel.text = [number stringValue];
     }];
 }
 
-- (void)updateAccelerometerSettings
-{
+- (void)updateAccelerometerSettings {
     if (self.accelerometerScale.selectedSegmentIndex == 0) {
         self.accelerometerGraph.fullScale = 2;
     } else if (self.accelerometerScale.selectedSegmentIndex == 1) {
@@ -149,8 +129,7 @@
     self.device.accelerometer.sleepPowerScheme = (int)self.sleepPowerScheme.selectedSegmentIndex;
 }
 
-- (IBAction)startAccelerationPressed:(id)sender
-{
+- (IBAction)startAccelerationPressed:(id)sender {
     [self updateAccelerometerSettings];
     
     [self.startAccelerometer setEnabled:NO];
@@ -180,8 +159,7 @@
     }];
 }
 
-- (IBAction)stopAccelerationPressed:(id)sender
-{
+- (IBAction)stopAccelerationPressed:(id)sender {
     [self.device.accelerometer.dataReadyEvent stopNotifications];
     self.accelerometerRunning = NO;
 

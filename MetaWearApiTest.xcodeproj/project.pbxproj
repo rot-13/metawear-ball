@@ -25,6 +25,7 @@
 		FE0E3AB41A389B3000834DE4 /* TCPSfx.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0E3AB31A389B3000834DE4 /* TCPSfx.m */; };
 		FE0E3AB71A389B3E00834DE4 /* jump.wav in Resources */ = {isa = PBXBuildFile; fileRef = FE0E3AB51A389B3E00834DE4 /* jump.wav */; };
 		FE0E3AB81A389B3E00834DE4 /* land.wav in Resources */ = {isa = PBXBuildFile; fileRef = FE0E3AB61A389B3E00834DE4 /* land.wav */; };
+		FE40F0551A4AAF7D00FAABA6 /* AccelRose.m in Sources */ = {isa = PBXBuildFile; fileRef = FE40F0541A4AAF7D00FAABA6 /* AccelRose.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,8 @@
 		FE0E3AB31A389B3000834DE4 /* TCPSfx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPSfx.m; sourceTree = "<group>"; };
 		FE0E3AB51A389B3E00834DE4 /* jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jump.wav; sourceTree = "<group>"; };
 		FE0E3AB61A389B3E00834DE4 /* land.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = land.wav; sourceTree = "<group>"; };
+		FE40F0531A4AAF7D00FAABA6 /* AccelRose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelRose.h; sourceTree = "<group>"; };
+		FE40F0541A4AAF7D00FAABA6 /* AccelRose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelRose.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,16 +91,11 @@
 		402D4202198843BE0011ADB1 = {
 			isa = PBXGroup;
 			children = (
-				FE0E3AB51A389B3E00834DE4 /* jump.wav */,
-				FE0E3AB61A389B3E00834DE4 /* land.wav */,
-				FE0E3AB21A389B3000834DE4 /* TCPSfx.h */,
-				FE0E3AB31A389B3000834DE4 /* TCPSfx.m */,
+				FE40F0501A4AA96000FAABA6 /* Lib */,
+				FE40F04F1A4AA92800FAABA6 /* Resources */,
 				4013B0CA198F18C5009925DA /* Accelerometer */,
-				40D97C1E198C095B00F55A09 /* MBProgressHUD */,
-				40D97BFA19897CBB00F55A09 /* MetaWearApiTest */,
+				40D97BFA19897CBB00F55A09 /* MetaWear */,
 				40D97C1119897DE100F55A09 /* Supporting Files */,
-				402D420D198843BE0011ADB1 /* Frameworks */,
-				402D420C198843BE0011ADB1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,7 +118,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		40D97BFA19897CBB00F55A09 /* MetaWearApiTest */ = {
+		40D97BFA19897CBB00F55A09 /* MetaWear */ = {
 			isa = PBXGroup;
 			children = (
 				40A6847A199BD25F0054F49D /* StartViewController.h */,
@@ -129,17 +127,19 @@
 				40D97BF319897CB400F55A09 /* DevicesTableViewController.m */,
 				40D97C1B1989CD1300F55A09 /* DeviceDetailViewController.h */,
 				40D97C1C1989CD1300F55A09 /* DeviceDetailViewController.m */,
-				40D97BF019897CB400F55A09 /* AppDelegate.h */,
-				40D97BF119897CB400F55A09 /* AppDelegate.m */,
 				40D97BF519897CB400F55A09 /* Main.storyboard */,
-				40D97BF419897CB400F55A09 /* Images.xcassets */,
 			);
-			name = MetaWearApiTest;
+			name = MetaWear;
 			sourceTree = "<group>";
 		};
 		40D97C1119897DE100F55A09 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				402D420C198843BE0011ADB1 /* Products */,
+				402D420D198843BE0011ADB1 /* Frameworks */,
+				40D97BF419897CB400F55A09 /* Images.xcassets */,
+				40D97BF019897CB400F55A09 /* AppDelegate.h */,
+				40D97BF119897CB400F55A09 /* AppDelegate.m */,
 				40D97C0C19897DD700F55A09 /* MetaWearApiTest-Info.plist */,
 				40D97C1219897E1000F55A09 /* InfoPlist.strings */,
 				40D97C0B19897DD700F55A09 /* main.m */,
@@ -155,6 +155,43 @@
 				40A68478199BD2420054F49D /* MBProgressHUD.m */,
 			);
 			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		FE40F04F1A4AA92800FAABA6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FE0E3AB51A389B3E00834DE4 /* jump.wav */,
+				FE0E3AB61A389B3E00834DE4 /* land.wav */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FE40F0501A4AA96000FAABA6 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				FE40F0561A4AAF8200FAABA6 /* AccelRose */,
+				40D97C1E198C095B00F55A09 /* MBProgressHUD */,
+				FE40F0511A4AA97100FAABA6 /* TCPSfx */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		FE40F0511A4AA97100FAABA6 /* TCPSfx */ = {
+			isa = PBXGroup;
+			children = (
+				FE0E3AB21A389B3000834DE4 /* TCPSfx.h */,
+				FE0E3AB31A389B3000834DE4 /* TCPSfx.m */,
+			);
+			name = TCPSfx;
+			sourceTree = "<group>";
+		};
+		FE40F0561A4AAF8200FAABA6 /* AccelRose */ = {
+			isa = PBXGroup;
+			children = (
+				FE40F0531A4AAF7D00FAABA6 /* AccelRose.h */,
+				FE40F0541A4AAF7D00FAABA6 /* AccelRose.m */,
+			);
+			name = AccelRose;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +279,7 @@
 				40A6847C199BD25F0054F49D /* StartViewController.m in Sources */,
 				40D97BF719897CB400F55A09 /* DevicesTableViewController.m in Sources */,
 				40A68479199BD2420054F49D /* MBProgressHUD.m in Sources */,
+				FE40F0551A4AAF7D00FAABA6 /* AccelRose.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
