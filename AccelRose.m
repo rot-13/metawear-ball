@@ -28,6 +28,7 @@
 #pragma mark - API
 
 - (void)update:(MBLAccelerometerData*)acceleration {
+    [self print:acceleration];
     if (self.prev) [self analyze:acceleration];
     [self.stream addObject:acceleration];
 }
@@ -35,7 +36,6 @@
 #pragma mark - Analysis
 
 - (void)analyze:(MBLAccelerometerData*)acceleration {
-    NSLog(@"%@", acceleration);
     int threshold = 150;
     if (!self.didJump && self.prev.RMS < threshold && acceleration.RMS < threshold) {
         [TCPSfx play:@"jump"];
@@ -49,6 +49,10 @@
 }
 
 #pragma mark - Helpers
+
+- (void)print:(MBLAccelerometerData*)acceleration {
+    NSLog(@"%5d  [%4d, %4d, %4d]", acceleration.RMS, acceleration.x, acceleration.y, acceleration.z);
+}
 
 - (MBLAccelerometerData*)prev {
     return self.stream.lastObject;
