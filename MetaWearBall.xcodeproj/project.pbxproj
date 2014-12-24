@@ -32,25 +32,25 @@
 		4013B0CC198F18C5009925DA /* AccelerometerFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelerometerFilter.m; sourceTree = "<group>"; };
 		4013B0D3198F1D1B009925DA /* APLGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLGraphView.h; sourceTree = "<group>"; };
 		4013B0D4198F1D1B009925DA /* APLGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLGraphView.m; sourceTree = "<group>"; };
-		402D420B198843BE0011ADB1 /* MetaWearApiTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetaWearApiTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		402D420B198843BE0011ADB1 /* MetaWearBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetaWearBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		402D420E198843BE0011ADB1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		402D4210198843BE0011ADB1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		402D4212198843BE0011ADB1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		40A68477199BD2420054F49D /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = MBProgressHUD/MBProgressHUD.h; sourceTree = "<group>"; };
 		40A68478199BD2420054F49D /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = MBProgressHUD/MBProgressHUD.m; sourceTree = "<group>"; };
 		40B1D2151A3681240051CBC6 /* MetaWear.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MetaWear.framework; sourceTree = "<group>"; };
-		40D97BF019897CB400F55A09 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MetaWearApiTest/AppDelegate.h; sourceTree = "<group>"; };
-		40D97BF119897CB400F55A09 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MetaWearApiTest/AppDelegate.m; sourceTree = "<group>"; };
-		40D97BF219897CB400F55A09 /* DevicesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DevicesTableViewController.h; path = MetaWearApiTest/DevicesTableViewController.h; sourceTree = "<group>"; };
-		40D97BF319897CB400F55A09 /* DevicesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DevicesTableViewController.m; path = MetaWearApiTest/DevicesTableViewController.m; sourceTree = "<group>"; };
-		40D97BF419897CB400F55A09 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MetaWearApiTest/Images.xcassets; sourceTree = "<group>"; };
-		40D97BF519897CB400F55A09 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = MetaWearApiTest/Main.storyboard; sourceTree = "<group>"; };
-		40D97C0B19897DD700F55A09 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MetaWearApiTest/main.m; sourceTree = "<group>"; };
-		40D97C0C19897DD700F55A09 /* MetaWearApiTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "MetaWearApiTest-Info.plist"; path = "MetaWearApiTest/MetaWearApiTest-Info.plist"; sourceTree = "<group>"; };
-		40D97C0D19897DD700F55A09 /* MetaWearApiTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MetaWearApiTest-Prefix.pch"; path = "MetaWearApiTest/MetaWearApiTest-Prefix.pch"; sourceTree = "<group>"; };
-		40D97C1319897E1000F55A09 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = MetaWearApiTest/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		40D97C1B1989CD1300F55A09 /* DeviceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviceDetailViewController.h; path = MetaWearApiTest/DeviceDetailViewController.h; sourceTree = "<group>"; };
-		40D97C1C1989CD1300F55A09 /* DeviceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeviceDetailViewController.m; path = MetaWearApiTest/DeviceDetailViewController.m; sourceTree = "<group>"; };
+		40D97BF019897CB400F55A09 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MetaWearBall/AppDelegate.h; sourceTree = "<group>"; };
+		40D97BF119897CB400F55A09 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MetaWearBall/AppDelegate.m; sourceTree = "<group>"; };
+		40D97BF219897CB400F55A09 /* DevicesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DevicesTableViewController.h; path = MetaWearBall/DevicesTableViewController.h; sourceTree = "<group>"; };
+		40D97BF319897CB400F55A09 /* DevicesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DevicesTableViewController.m; path = MetaWearBall/DevicesTableViewController.m; sourceTree = "<group>"; };
+		40D97BF419897CB400F55A09 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MetaWearBall/Images.xcassets; sourceTree = "<group>"; };
+		40D97BF519897CB400F55A09 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = MetaWearBall/Main.storyboard; sourceTree = "<group>"; };
+		40D97C0B19897DD700F55A09 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MetaWearBall/main.m; sourceTree = "<group>"; };
+		40D97C0C19897DD700F55A09 /* MetaWearBall-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "MetaWearBall-Info.plist"; path = "MetaWearBall/MetaWearBall-Info.plist"; sourceTree = "<group>"; };
+		40D97C0D19897DD700F55A09 /* MetaWearBall-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MetaWearBall-Prefix.pch"; path = "MetaWearBall/MetaWearBall-Prefix.pch"; sourceTree = "<group>"; };
+		40D97C1319897E1000F55A09 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = MetaWearBall/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		40D97C1B1989CD1300F55A09 /* DeviceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviceDetailViewController.h; path = MetaWearBall/DeviceDetailViewController.h; sourceTree = "<group>"; };
+		40D97C1C1989CD1300F55A09 /* DeviceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeviceDetailViewController.m; path = MetaWearBall/DeviceDetailViewController.m; sourceTree = "<group>"; };
 		FE0E3AB21A389B3000834DE4 /* TCPSfx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPSfx.h; sourceTree = "<group>"; };
 		FE0E3AB31A389B3000834DE4 /* TCPSfx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPSfx.m; sourceTree = "<group>"; };
 		FE0E3AB51A389B3E00834DE4 /* jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jump.wav; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 		402D420C198843BE0011ADB1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				402D420B198843BE0011ADB1 /* MetaWearApiTest.app */,
+				402D420B198843BE0011ADB1 /* MetaWearBall.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,10 +135,10 @@
 				40D97BF419897CB400F55A09 /* Images.xcassets */,
 				40D97BF019897CB400F55A09 /* AppDelegate.h */,
 				40D97BF119897CB400F55A09 /* AppDelegate.m */,
-				40D97C0C19897DD700F55A09 /* MetaWearApiTest-Info.plist */,
+				40D97C0C19897DD700F55A09 /* MetaWearBall-Info.plist */,
 				40D97C1219897E1000F55A09 /* InfoPlist.strings */,
 				40D97C0B19897DD700F55A09 /* main.m */,
-				40D97C0D19897DD700F55A09 /* MetaWearApiTest-Prefix.pch */,
+				40D97C0D19897DD700F55A09 /* MetaWearBall-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -192,9 +192,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		402D420A198843BE0011ADB1 /* MetaWearApiTest */ = {
+		402D420A198843BE0011ADB1 /* MetaWearBall */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 402D4237198843BF0011ADB1 /* Build configuration list for PBXNativeTarget "MetaWearApiTest" */;
+			buildConfigurationList = 402D4237198843BF0011ADB1 /* Build configuration list for PBXNativeTarget "MetaWearBall" */;
 			buildPhases = (
 				402D4207198843BE0011ADB1 /* Sources */,
 				402D4208198843BE0011ADB1 /* Frameworks */,
@@ -204,9 +204,9 @@
 			);
 			dependencies = (
 			);
-			name = MetaWearApiTest;
+			name = MetaWearBall;
 			productName = MetaWareApiTest;
-			productReference = 402D420B198843BE0011ADB1 /* MetaWearApiTest.app */;
+			productReference = 402D420B198843BE0011ADB1 /* MetaWearBall.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -228,7 +228,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 402D4206198843BE0011ADB1 /* Build configuration list for PBXProject "MetaWearApiTest" */;
+			buildConfigurationList = 402D4206198843BE0011ADB1 /* Build configuration list for PBXProject "MetaWearBall" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -240,7 +240,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				402D420A198843BE0011ADB1 /* MetaWearApiTest */,
+				402D420A198843BE0011ADB1 /* MetaWearBall */,
 			);
 		};
 /* End PBXProject section */
@@ -372,9 +372,9 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MetaWearApiTest/MetaWearApiTest-Prefix.pch";
-				INFOPLIST_FILE = "MetaWearApiTest/MetaWearApiTest-Info.plist";
-				PRODUCT_NAME = MetaWearApiTest;
+				GCC_PREFIX_HEADER = "MetaWearBall/MetaWearBall-Prefix.pch";
+				INFOPLIST_FILE = "MetaWearBall/MetaWearBall-Info.plist";
+				PRODUCT_NAME = MetaWearBall;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -390,9 +390,9 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MetaWearApiTest/MetaWearApiTest-Prefix.pch";
-				INFOPLIST_FILE = "MetaWearApiTest/MetaWearApiTest-Info.plist";
-				PRODUCT_NAME = MetaWearApiTest;
+				GCC_PREFIX_HEADER = "MetaWearBall/MetaWearBall-Prefix.pch";
+				INFOPLIST_FILE = "MetaWearBall/MetaWearBall-Info.plist";
+				PRODUCT_NAME = MetaWearBall;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -400,7 +400,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		402D4206198843BE0011ADB1 /* Build configuration list for PBXProject "MetaWearApiTest" */ = {
+		402D4206198843BE0011ADB1 /* Build configuration list for PBXProject "MetaWearBall" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				402D4235198843BF0011ADB1 /* Debug */,
@@ -409,7 +409,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		402D4237198843BF0011ADB1 /* Build configuration list for PBXNativeTarget "MetaWearApiTest" */ = {
+		402D4237198843BF0011ADB1 /* Build configuration list for PBXNativeTarget "MetaWearBall" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				402D4238198843BF0011ADB1 /* Debug */,

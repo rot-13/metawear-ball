@@ -1,6 +1,6 @@
 /**
  * DeviceDetailViewController.m
- * MetaWearApiTest
+ * MetaWearBall
 */
 
 #import "DeviceDetailViewController.h"

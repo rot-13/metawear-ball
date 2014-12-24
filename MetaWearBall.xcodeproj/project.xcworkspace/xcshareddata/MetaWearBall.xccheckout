@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>402D97A0-70D2-420B-987C-7CBA4BB0119C</string>
 	<key>IDESourceControlProjectName</key>
-	<string>MetaWearApiTest</string>
+	<string>MetaWearBall</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>340A91AC1A9F83064A9A62DF618E1294BC6F0605</key>
 		<string>github.com:mbientlab/Metawear-SampleiOSApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>MetaWearApiTest.xcodeproj</string>
+	<string>MetaWearBall.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>340A91AC1A9F83064A9A62DF618E1294BC6F0605</key>

@@ -1,6 +1,6 @@
 /**
- * MetaWearApiTest-Prefix.pch
- * MetaWearApiTest
+ * DevicesTableViewController.h
+ * MetaWearBall
  *
  * Created by Stephen Schiffli on 7/29/14.
  * Copyright 2014 MbientLab Inc. All rights reserved.
@@ -33,19 +33,8 @@
  * contact MbientLab Inc, at www.mbientlab.com.
  */
 
-//
-//  Prefix header
-//
-//  The contents of this file are implicitly included at the beginning of every source file.
-//
+#import <UIKit/UIKit.h>
 
-#import <Availability.h>
+@interface DevicesTableViewController : UITableViewController
 
-#ifndef __IPHONE_3_0
-#warning "This project uses features only available in iOS SDK 3.0 and later."
-#endif
-
-#ifdef __OBJC__
-    #import <UIKit/UIKit.h>
-    #import <Foundation/Foundation.h>
-#endif
+@end

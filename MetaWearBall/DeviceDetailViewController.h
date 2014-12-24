@@ -1,6 +1,6 @@
 /**
  * DeviceDetailViewController.h
- * MetaWearApiTest
+ * MetaWearBall
  */
 
 #import <UIKit/UIKit.h>

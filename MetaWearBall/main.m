@@ -1,6 +1,6 @@
 /**
  * main.m
- * MetaWearApiTest
+ * MetaWearBall
  *
  * Created by Stephen Schiffli on 7/29/14.
  * Copyright 2014 MbientLab Inc. All rights reserved.
