@@ -6,12 +6,11 @@
 #import "DeviceDetailViewController.h"
 #import "MBProgressHUD.h"
 #import "APLGraphView.h"
-#import "TCPSfx.h"
+#import "AccelRose.h"
 
 @interface DeviceDetailViewController () <MFMailComposeViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UISwitch *connectionSwitch;
-
 @property (weak, nonatomic) IBOutlet UISegmentedControl *accelerometerScale;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *sampleFrequency;
 @property (weak, nonatomic) IBOutlet UISwitch *highPassFilterSwitch;
@@ -21,17 +20,13 @@
 @property (weak, nonatomic) IBOutlet UISwitch *autoSleepSwitch;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *sleepSampleFrequency;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *sleepPowerScheme;
-
 @property (weak, nonatomic) IBOutlet APLGraphView *accelerometerGraph;
 @property (weak, nonatomic) IBOutlet UILabel *batteryLevelLabel;
-
 @property (weak, nonatomic) IBOutlet UIButton *startAccelerometer;
 @property (weak, nonatomic) IBOutlet UIButton *stopAccelerometer;
-
-@property (strong, nonatomic) NSArray *accelerometerDataArray;
+@property (nonatomic) AccelRose *accelAnalyst;
 @property (nonatomic) BOOL accelerometerRunning;
-@property (nonatomic) int lastRMS;
-@property (nonatomic) BOOL didJump;
+
 @end
 
 @implementation DeviceDetailViewController
@@ -39,7 +34,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.stopAccelerometer setEnabled:NO];
-    self.lastRMS = 1000000;
+    self.accelAnalyst = [AccelRose new];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -135,27 +130,11 @@
     [self.startAccelerometer setEnabled:NO];
     [self.stopAccelerometer setEnabled:YES];
     self.accelerometerRunning = YES;
-    // These variables are used for data recording
-    NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:1000];
-    self.accelerometerDataArray = array;
 
-    
+
     [self.device.accelerometer.dataReadyEvent startNotificationsWithHandler:^(MBLAccelerometerData *acceleration, NSError *error) {
-        NSLog(@"%@", acceleration);
-        int threshold = 150;
-        if (!self.didJump && self.lastRMS < threshold && acceleration.RMS < threshold) {
-            [TCPSfx play:@"jump"];
-            self.didJump = YES;
-        } else if (self.didJump && self.lastRMS < threshold && acceleration.RMS > threshold) {
-            [TCPSfx play:@"land"];
-            self.didJump = NO;
-        } if (self.lastRMS > 500 && acceleration.RMS > 750) {
-            self.didJump = NO;
-        }
-        self.lastRMS = acceleration.RMS;
+        [self.accelAnalyst update:acceleration];
         [self.accelerometerGraph addX:(float)acceleration.x / 1000.0 y:(float)acceleration.y / 1000.0 z:(float)acceleration.z / 1000.0];
-        // Add data to data array for saving
-        [array addObject:acceleration];
     }];
 }
 

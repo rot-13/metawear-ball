@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MetaWear/MetaWear.h>
 
 @interface AccelRose : NSObject
+
+- (void)update:(MBLAccelerometerData*)acceleration;
 
 @end
