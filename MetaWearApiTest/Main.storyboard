@@ -14,55 +14,19 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="ebQ-vk-kI6" kind="relationship" relationship="rootViewController" id="k6A-7h-bwJ"/>
+                        <segue destination="70W-Pt-zI5" kind="relationship" relationship="rootViewController" id="8Pi-nw-ZBt"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WhW-y3-cJR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-626" y="-75"/>
-        </scene>
-        <!--Start View Controller-->
-        <scene sceneID="WGV-a6-Fmw">
-            <objects>
-                <viewController id="ebQ-vk-kI6" customClass="StartViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="5Cc-S9-oU3"/>
-                        <viewControllerLayoutGuide type="bottom" id="gKD-fY-kbq"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2Vy-2J-NUU">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="haE-Lm-1dh">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1U-q9-7A1">
-                                <rect key="frame" x="54" y="389" width="212" height="41"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                <state key="normal" title="Get Started!">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="70W-Pt-zI5" kind="push" id="pfZ-q1-SC4"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="04B-kb-85J"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bUP-8f-rfA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-149" y="-75"/>
+            <point key="canvasLocation" x="-213" y="-80"/>
         </scene>
         <!--Devices-->
         <scene sceneID="fh2-Ex-QHk">
             <objects>
-                <tableViewController id="70W-Pt-zI5" customClass="DevicesTableViewController" sceneMemberID="viewController">
+                <tableViewController extendedLayoutIncludesOpaqueBars="YES" id="70W-Pt-zI5" customClass="DevicesTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="75" sectionHeaderHeight="10" sectionFooterHeight="10" id="imV-cT-HP0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="pz9-Ty-s9u">
@@ -155,8 +119,8 @@
                             <outlet property="delegate" destination="70W-Pt-zI5" id="hEv-t1-Uj1"/>
                         </connections>
                     </tableView>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="Devices" id="qQr-oR-aFB"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="scanningSwitch" destination="M85-Ro-D6U" id="ToJ-Jy-VZY"/>
                         <segue destination="cmV-QT-OnK" kind="push" identifier="DeviceDetails" id="f7o-am-8l3"/>
@@ -164,7 +128,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6zI-Z9-Ml5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="257" y="-80"/>
+            <point key="canvasLocation" x="212" y="-80"/>
         </scene>
         <!--MetaWear-->
         <scene sceneID="NoY-ga-uVD">
@@ -405,9 +369,6 @@
             <point key="canvasLocation" x="590" y="-75"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Splash" width="320" height="568"/>
-    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

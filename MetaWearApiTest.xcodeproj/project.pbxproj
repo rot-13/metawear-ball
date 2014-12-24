@@ -13,7 +13,6 @@
 		402D4211198843BE0011ADB1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 402D4210198843BE0011ADB1 /* CoreGraphics.framework */; };
 		402D4213198843BE0011ADB1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 402D4212198843BE0011ADB1 /* UIKit.framework */; };
 		40A68479199BD2420054F49D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A68478199BD2420054F49D /* MBProgressHUD.m */; };
-		40A6847C199BD25F0054F49D /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A6847B199BD25F0054F49D /* StartViewController.m */; };
 		40B1D2161A3681240051CBC6 /* MetaWear.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B1D2151A3681240051CBC6 /* MetaWear.framework */; };
 		40D97BF619897CB400F55A09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D97BF119897CB400F55A09 /* AppDelegate.m */; };
 		40D97BF719897CB400F55A09 /* DevicesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D97BF319897CB400F55A09 /* DevicesTableViewController.m */; };
@@ -39,8 +38,6 @@
 		402D4212198843BE0011ADB1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		40A68477199BD2420054F49D /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = MBProgressHUD/MBProgressHUD.h; sourceTree = "<group>"; };
 		40A68478199BD2420054F49D /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = MBProgressHUD/MBProgressHUD.m; sourceTree = "<group>"; };
-		40A6847A199BD25F0054F49D /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StartViewController.h; path = MetaWearApiTest/StartViewController.h; sourceTree = "<group>"; };
-		40A6847B199BD25F0054F49D /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StartViewController.m; path = MetaWearApiTest/StartViewController.m; sourceTree = "<group>"; };
 		40B1D2151A3681240051CBC6 /* MetaWear.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MetaWear.framework; sourceTree = "<group>"; };
 		40D97BF019897CB400F55A09 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MetaWearApiTest/AppDelegate.h; sourceTree = "<group>"; };
 		40D97BF119897CB400F55A09 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MetaWearApiTest/AppDelegate.m; sourceTree = "<group>"; };
@@ -121,8 +118,6 @@
 		40D97BFA19897CBB00F55A09 /* MetaWear */ = {
 			isa = PBXGroup;
 			children = (
-				40A6847A199BD25F0054F49D /* StartViewController.h */,
-				40A6847B199BD25F0054F49D /* StartViewController.m */,
 				40D97BF219897CB400F55A09 /* DevicesTableViewController.h */,
 				40D97BF319897CB400F55A09 /* DevicesTableViewController.m */,
 				40D97C1B1989CD1300F55A09 /* DeviceDetailViewController.h */,
@@ -276,7 +271,6 @@
 				4013B0D5198F1D1B009925DA /* APLGraphView.m in Sources */,
 				40D97C0F19897DD700F55A09 /* main.m in Sources */,
 				FE0E3AB41A389B3000834DE4 /* TCPSfx.m in Sources */,
-				40A6847C199BD25F0054F49D /* StartViewController.m in Sources */,
 				40D97BF719897CB400F55A09 /* DevicesTableViewController.m in Sources */,
 				40A68479199BD2420054F49D /* MBProgressHUD.m in Sources */,
 				FE40F0551A4AAF7D00FAABA6 /* AccelRose.m in Sources */,
