@@ -7,12 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4013B0CF198F18C5009925DA /* AccelerometerFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4013B0CC198F18C5009925DA /* AccelerometerFilter.m */; };
-		4013B0D5198F1D1B009925DA /* APLGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4013B0D4198F1D1B009925DA /* APLGraphView.m */; };
 		402D420F198843BE0011ADB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 402D420E198843BE0011ADB1 /* Foundation.framework */; };
 		402D4211198843BE0011ADB1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 402D4210198843BE0011ADB1 /* CoreGraphics.framework */; };
 		402D4213198843BE0011ADB1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 402D4212198843BE0011ADB1 /* UIKit.framework */; };
-		40A68479199BD2420054F49D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A68478199BD2420054F49D /* MBProgressHUD.m */; };
 		40B1D2161A3681240051CBC6 /* MetaWear.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B1D2151A3681240051CBC6 /* MetaWear.framework */; };
 		40D97BF619897CB400F55A09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D97BF119897CB400F55A09 /* AppDelegate.m */; };
 		40D97BF719897CB400F55A09 /* DevicesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D97BF319897CB400F55A09 /* DevicesTableViewController.m */; };
@@ -21,23 +18,20 @@
 		40D97C0F19897DD700F55A09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D97C0B19897DD700F55A09 /* main.m */; };
 		40D97C1619897F0100F55A09 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40D97C1219897E1000F55A09 /* InfoPlist.strings */; };
 		40D97C1D1989CD1300F55A09 /* DeviceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D97C1C1989CD1300F55A09 /* DeviceDetailViewController.m */; };
-		FE0E3AB41A389B3000834DE4 /* TCPSfx.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0E3AB31A389B3000834DE4 /* TCPSfx.m */; };
-		FE0E3AB71A389B3E00834DE4 /* jump.wav in Resources */ = {isa = PBXBuildFile; fileRef = FE0E3AB51A389B3E00834DE4 /* jump.wav */; };
-		FE0E3AB81A389B3E00834DE4 /* land.wav in Resources */ = {isa = PBXBuildFile; fileRef = FE0E3AB61A389B3E00834DE4 /* land.wav */; };
-		FE40F0551A4AAF7D00FAABA6 /* AccelRose.m in Sources */ = {isa = PBXBuildFile; fileRef = FE40F0541A4AAF7D00FAABA6 /* AccelRose.m */; };
+		FE11E90A1A4B074400A3093E /* jump.wav in Resources */ = {isa = PBXBuildFile; fileRef = FE11E9081A4B074400A3093E /* jump.wav */; };
+		FE11E90B1A4B074400A3093E /* land.wav in Resources */ = {isa = PBXBuildFile; fileRef = FE11E9091A4B074400A3093E /* land.wav */; };
+		FE11E91A1A4B07BB00A3093E /* AccelerometerFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE11E90E1A4B07BB00A3093E /* AccelerometerFilter.m */; };
+		FE11E91B1A4B07BB00A3093E /* APLGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE11E9101A4B07BB00A3093E /* APLGraphView.m */; };
+		FE11E91C1A4B07BB00A3093E /* AccelRose.m in Sources */ = {isa = PBXBuildFile; fileRef = FE11E9131A4B07BB00A3093E /* AccelRose.m */; };
+		FE11E91D1A4B07BB00A3093E /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FE11E9161A4B07BB00A3093E /* MBProgressHUD.m */; };
+		FE11E91E1A4B07BB00A3093E /* TCPSfx.m in Sources */ = {isa = PBXBuildFile; fileRef = FE11E9191A4B07BB00A3093E /* TCPSfx.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4013B0CB198F18C5009925DA /* AccelerometerFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelerometerFilter.h; sourceTree = "<group>"; };
-		4013B0CC198F18C5009925DA /* AccelerometerFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelerometerFilter.m; sourceTree = "<group>"; };
-		4013B0D3198F1D1B009925DA /* APLGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLGraphView.h; sourceTree = "<group>"; };
-		4013B0D4198F1D1B009925DA /* APLGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLGraphView.m; sourceTree = "<group>"; };
 		402D420B198843BE0011ADB1 /* MetaWearBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetaWearBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		402D420E198843BE0011ADB1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		402D4210198843BE0011ADB1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		402D4212198843BE0011ADB1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		40A68477199BD2420054F49D /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = MBProgressHUD/MBProgressHUD.h; sourceTree = "<group>"; };
-		40A68478199BD2420054F49D /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = MBProgressHUD/MBProgressHUD.m; sourceTree = "<group>"; };
 		40B1D2151A3681240051CBC6 /* MetaWear.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MetaWear.framework; sourceTree = "<group>"; };
 		40D97BF019897CB400F55A09 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MetaWearBall/AppDelegate.h; sourceTree = "<group>"; };
 		40D97BF119897CB400F55A09 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MetaWearBall/AppDelegate.m; sourceTree = "<group>"; };
@@ -51,12 +45,18 @@
 		40D97C1319897E1000F55A09 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = MetaWearBall/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		40D97C1B1989CD1300F55A09 /* DeviceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviceDetailViewController.h; path = MetaWearBall/DeviceDetailViewController.h; sourceTree = "<group>"; };
 		40D97C1C1989CD1300F55A09 /* DeviceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeviceDetailViewController.m; path = MetaWearBall/DeviceDetailViewController.m; sourceTree = "<group>"; };
-		FE0E3AB21A389B3000834DE4 /* TCPSfx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPSfx.h; sourceTree = "<group>"; };
-		FE0E3AB31A389B3000834DE4 /* TCPSfx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPSfx.m; sourceTree = "<group>"; };
-		FE0E3AB51A389B3E00834DE4 /* jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jump.wav; sourceTree = "<group>"; };
-		FE0E3AB61A389B3E00834DE4 /* land.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = land.wav; sourceTree = "<group>"; };
-		FE40F0531A4AAF7D00FAABA6 /* AccelRose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelRose.h; sourceTree = "<group>"; };
-		FE40F0541A4AAF7D00FAABA6 /* AccelRose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelRose.m; sourceTree = "<group>"; };
+		FE11E9081A4B074400A3093E /* jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jump.wav; sourceTree = "<group>"; };
+		FE11E9091A4B074400A3093E /* land.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = land.wav; sourceTree = "<group>"; };
+		FE11E90D1A4B07BB00A3093E /* AccelerometerFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelerometerFilter.h; sourceTree = "<group>"; };
+		FE11E90E1A4B07BB00A3093E /* AccelerometerFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelerometerFilter.m; sourceTree = "<group>"; };
+		FE11E90F1A4B07BB00A3093E /* APLGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLGraphView.h; sourceTree = "<group>"; };
+		FE11E9101A4B07BB00A3093E /* APLGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLGraphView.m; sourceTree = "<group>"; };
+		FE11E9121A4B07BB00A3093E /* AccelRose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelRose.h; sourceTree = "<group>"; };
+		FE11E9131A4B07BB00A3093E /* AccelRose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelRose.m; sourceTree = "<group>"; };
+		FE11E9151A4B07BB00A3093E /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		FE11E9161A4B07BB00A3093E /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		FE11E9181A4B07BB00A3093E /* TCPSfx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPSfx.h; sourceTree = "<group>"; };
+		FE11E9191A4B07BB00A3093E /* TCPSfx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPSfx.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,23 +74,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4013B0CA198F18C5009925DA /* Accelerometer */ = {
-			isa = PBXGroup;
-			children = (
-				4013B0CB198F18C5009925DA /* AccelerometerFilter.h */,
-				4013B0CC198F18C5009925DA /* AccelerometerFilter.m */,
-				4013B0D3198F1D1B009925DA /* APLGraphView.h */,
-				4013B0D4198F1D1B009925DA /* APLGraphView.m */,
-			);
-			path = Accelerometer;
-			sourceTree = "<group>";
-		};
 		402D4202198843BE0011ADB1 = {
 			isa = PBXGroup;
 			children = (
 				FE40F0501A4AA96000FAABA6 /* Lib */,
 				FE40F04F1A4AA92800FAABA6 /* Resources */,
-				4013B0CA198F18C5009925DA /* Accelerometer */,
 				40D97BFA19897CBB00F55A09 /* MetaWear */,
 				40D97C1119897DE100F55A09 /* Supporting Files */,
 			);
@@ -133,60 +121,72 @@
 				402D420C198843BE0011ADB1 /* Products */,
 				402D420D198843BE0011ADB1 /* Frameworks */,
 				40D97BF419897CB400F55A09 /* Images.xcassets */,
+				40D97C0B19897DD700F55A09 /* main.m */,
 				40D97BF019897CB400F55A09 /* AppDelegate.h */,
 				40D97BF119897CB400F55A09 /* AppDelegate.m */,
-				40D97C0C19897DD700F55A09 /* MetaWearBall-Info.plist */,
 				40D97C1219897E1000F55A09 /* InfoPlist.strings */,
-				40D97C0B19897DD700F55A09 /* main.m */,
 				40D97C0D19897DD700F55A09 /* MetaWearBall-Prefix.pch */,
+				40D97C0C19897DD700F55A09 /* MetaWearBall-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		40D97C1E198C095B00F55A09 /* MBProgressHUD */ = {
+		FE11E90C1A4B07BB00A3093E /* Accelerometer */ = {
 			isa = PBXGroup;
 			children = (
-				40A68477199BD2420054F49D /* MBProgressHUD.h */,
-				40A68478199BD2420054F49D /* MBProgressHUD.m */,
+				FE11E90D1A4B07BB00A3093E /* AccelerometerFilter.h */,
+				FE11E90E1A4B07BB00A3093E /* AccelerometerFilter.m */,
+				FE11E90F1A4B07BB00A3093E /* APLGraphView.h */,
+				FE11E9101A4B07BB00A3093E /* APLGraphView.m */,
 			);
-			name = MBProgressHUD;
+			path = Accelerometer;
+			sourceTree = "<group>";
+		};
+		FE11E9111A4B07BB00A3093E /* AccelRose */ = {
+			isa = PBXGroup;
+			children = (
+				FE11E9121A4B07BB00A3093E /* AccelRose.h */,
+				FE11E9131A4B07BB00A3093E /* AccelRose.m */,
+			);
+			path = AccelRose;
+			sourceTree = "<group>";
+		};
+		FE11E9141A4B07BB00A3093E /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				FE11E9151A4B07BB00A3093E /* MBProgressHUD.h */,
+				FE11E9161A4B07BB00A3093E /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		FE11E9171A4B07BB00A3093E /* TCPSfx */ = {
+			isa = PBXGroup;
+			children = (
+				FE11E9181A4B07BB00A3093E /* TCPSfx.h */,
+				FE11E9191A4B07BB00A3093E /* TCPSfx.m */,
+			);
+			path = TCPSfx;
 			sourceTree = "<group>";
 		};
 		FE40F04F1A4AA92800FAABA6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FE0E3AB51A389B3E00834DE4 /* jump.wav */,
-				FE0E3AB61A389B3E00834DE4 /* land.wav */,
+				FE11E9081A4B074400A3093E /* jump.wav */,
+				FE11E9091A4B074400A3093E /* land.wav */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		FE40F0501A4AA96000FAABA6 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				FE40F0561A4AAF8200FAABA6 /* AccelRose */,
-				40D97C1E198C095B00F55A09 /* MBProgressHUD */,
-				FE40F0511A4AA97100FAABA6 /* TCPSfx */,
+				FE11E90C1A4B07BB00A3093E /* Accelerometer */,
+				FE11E9111A4B07BB00A3093E /* AccelRose */,
+				FE11E9141A4B07BB00A3093E /* MBProgressHUD */,
+				FE11E9171A4B07BB00A3093E /* TCPSfx */,
 			);
-			name = Lib;
-			sourceTree = "<group>";
-		};
-		FE40F0511A4AA97100FAABA6 /* TCPSfx */ = {
-			isa = PBXGroup;
-			children = (
-				FE0E3AB21A389B3000834DE4 /* TCPSfx.h */,
-				FE0E3AB31A389B3000834DE4 /* TCPSfx.m */,
-			);
-			name = TCPSfx;
-			sourceTree = "<group>";
-		};
-		FE40F0561A4AAF8200FAABA6 /* AccelRose */ = {
-			isa = PBXGroup;
-			children = (
-				FE40F0531A4AAF7D00FAABA6 /* AccelRose.h */,
-				FE40F0541A4AAF7D00FAABA6 /* AccelRose.m */,
-			);
-			name = AccelRose;
+			path = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,8 +250,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE0E3AB81A389B3E00834DE4 /* land.wav in Resources */,
-				FE0E3AB71A389B3E00834DE4 /* jump.wav in Resources */,
+				FE11E90B1A4B074400A3093E /* land.wav in Resources */,
+				FE11E90A1A4B074400A3093E /* jump.wav in Resources */,
 				40D97C1619897F0100F55A09 /* InfoPlist.strings in Resources */,
 				40D97BF819897CB400F55A09 /* Images.xcassets in Resources */,
 				40D97BF919897CB400F55A09 /* Main.storyboard in Resources */,
@@ -266,14 +266,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				40D97BF619897CB400F55A09 /* AppDelegate.m in Sources */,
-				4013B0CF198F18C5009925DA /* AccelerometerFilter.m in Sources */,
 				40D97C1D1989CD1300F55A09 /* DeviceDetailViewController.m in Sources */,
-				4013B0D5198F1D1B009925DA /* APLGraphView.m in Sources */,
 				40D97C0F19897DD700F55A09 /* main.m in Sources */,
-				FE0E3AB41A389B3000834DE4 /* TCPSfx.m in Sources */,
+				FE11E91C1A4B07BB00A3093E /* AccelRose.m in Sources */,
 				40D97BF719897CB400F55A09 /* DevicesTableViewController.m in Sources */,
-				40A68479199BD2420054F49D /* MBProgressHUD.m in Sources */,
-				FE40F0551A4AAF7D00FAABA6 /* AccelRose.m in Sources */,
+				FE11E91E1A4B07BB00A3093E /* TCPSfx.m in Sources */,
+				FE11E91A1A4B07BB00A3093E /* AccelerometerFilter.m in Sources */,
+				FE11E91B1A4B07BB00A3093E /* APLGraphView.m in Sources */,
+				FE11E91D1A4B07BB00A3093E /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
